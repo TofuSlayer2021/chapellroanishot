@@ -1,0 +1,330 @@
+
+/* GENERAL STYLINGS */
+html {
+    width: 1280px;
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: "Righteous", sans-serif;
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    margin-right: 0px;
+    margin-left: -10px;
+}
+/* HEADER STYLINGS */
+#top {
+    margin-top: 0px;
+    margin-left: -10px;
+    margin-left: -10px;
+    padding-right: 10px;
+    background-color: navy;
+}
+#tagline {
+    font-family: "Rubik Mono One", monospace;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* DARK MODE STYLINGS */
+#change_modes{
+    margin-left: 1200px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+#change_button {
+    position: fixed;
+    background-color: #ba109a;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 200px;
+    border: none;
+    z-index: 10;
+}
+#change_button img {
+    width: 60px;
+    background-color: transparent;
+}
+
+/* MENU STYLINGS */
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#logo {
+    background-color: blue;
+    border-radius: 170px 170px 0 0;
+    padding: 20px;
+    margin-top: -20px;
+}
+#logo img {
+    width: 300px;
+    margin-bottom: -20px;
+}
+#logo:hover {
+    color: white;
+    background: linear-gradient(black, blue);
+}
+#menu button {
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+    background-color: blue;
+    border-radius: 150px 150px 0 0;
+    padding: 20px;
+    border: none;
+}
+#menu button:hover {
+    color: white;
+    background: linear-gradient(black, blue);
+}
+
+/* MAIN BIO STYLINGS */
+#main_bio {
+    margin-top: -18px;
+    background-image: url(bio.png);
+    width: 1280px;
+    height: 780px;
+    display: flex;
+    flex-direction: row;
+
+}
+#carousel {
+    width: 800px; 
+    padding-top: 100px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    filter: drop-shadow(0px 0px 10px aqua);
+}
+#carousel img{
+    height: 500px;
+    padding-left: 20px;
+}
+
+/* PRODUCTS STYLINGS */
+#spacer{
+    width: 1280px;
+    height: 600px;
+}
+.product {
+    width: 1280px;
+    height: 500px;
+    background: linear-gradient(navy, white);
+    color: white;
+}
+.p_img {
+    width: 640px;
+}
+.p_img img{
+    margin-left: 40px;
+}
+.product div h2 {
+    color: white;
+}
+.product div p {
+    color: white;
+}
+.p_button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    font-family: "Righteous", sans-serif;
+}
+.p_button:hover {
+    background: linear-gradient(black, blue);
+}
+.description {
+    text-align: center;
+    width: 640px;
+}
+#prod_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+}
+#prod_1 div img {
+    height: 450px;
+}
+#prod_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+#prod_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    position: absolute;
+    z-index: 0;
+}
+
+/* PRODUCT BUTTONS STYLINGS */
+#product_buttons {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    margin-top: 500px;
+    z-index: 4;
+}
+#product_buttons button {
+    width: 426.66px;
+    border: none;
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-size: 30px;
+    background-color: transparent;
+}
+#product_buttons button:hover {
+    color: white;
+    background: linear-gradient(black, blue);
+    height: 100px;
+}
+
+/* GUESSING GAME STYLINGS */
+#guessing_game {
+    background-color: navy;
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 300px;
+    width: 1280px;
+    margin-right: 0px;
+}
+#halfsie_1 {
+    width: 896px;
+}
+#halfsie_1 h2 {
+    margin-left: 30px;
+}
+#halfsie_1 p {
+    margin-left: 30px;
+    font-size: 25px;
+    color: white;
+}
+#halfsie_1 form {
+    margin-left: 30px;
+    font-size: 25px;
+}
+#halfsie_2 {
+    width: 384px;
+    font-size: 25px;
+}
+#h_p{
+    color: white;
+}
+#output {
+    color: hotpink;
+}
+#play_button{ 
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-family: "Righteous", sans-serif;
+    margin-top: 10px;
+}
+#play_button:hover{ 
+    color: white;
+    background: linear-gradient(black, blue);
+}
+
+/* CONTACT FORM STYLINGS */
+#contact_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(#6868DA, navy);
+}
+#contactForm {
+    height: 450px;
+    color: white;
+}
+#contact_form h2{ 
+    color: white;
+}
+#submit_button{ 
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-family: "Righteous", sans-serif;
+}
+#submit_button:hover{ 
+    color: white;
+    background: linear-gradient(black, blue);
+}
+
+#contact_area img {
+    margin-top: 25px;
+    height: 400px;
+}
+.error {
+    color: red;
+}
+#submissionMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    height: 150px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+
+/* FOOTER STYLINGS */
+#footer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+#social_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.icon {
+    padding: 20px 20px;
+}
+#social_icons div a img{
+    height: 70px;
+    margin-bottom: -10px;
+}
+#logo_duex img {
+    width: 200px;
+}
+#logo_duex img {
+    width: 300px;
+    padding-top: 50px;
+}
+
+

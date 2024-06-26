@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<hmtl>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Everyone's Favorite Artist</title>
+        <link id="light_mode" rel="stylesheet" href="light_mode.css">
+        <link id="dark_mode" rel="stylesheet" href="dark_mode.css" disabled>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Mono+One&display=swap');
+        </style>
+        <script defer src="chappell_functionality.js"></script>
+      </head>
+<body>
+    <div id="top">
+    <!-- HEADER -->
+        <div id="tagline">
+            <h1>Your favorite artist's favorite artist</h1>
+        </div>
+        <div id="change_modes">
+            <button id="change_button"><img src="Dark_Mode/moon_2.png"></button>
+        </div>
+    <!-- MENU -->   
+        <div id="menu">
+            <div id="logo">
+                <img src="logo.png">
+            </div>
+            <div>
+                <a href="#products"><button>PRODUCTS</button></a>
+                <a href="#guessing_game"><button>GUESSING GAME</button></a>
+                <a href="#contact_form"><button>CONTACT FORM</button></a>
+            </div>
+        </div>
+    </div>
+<!-- MAIN BIO -->
+    <div id="main_bio">
+        <div id="carousel">
+            <a href="https://www.youtube.com/watch?v=AfSjnsYiY_A"><img src="casual.png" alt="casual"></a>
+            <a href="https://www.youtube.com/watch?v=ePsqyPMIg6I"><img src="karma.png" alt="kink is karma"></a>
+            <a href="https://www.youtube.com/watch?v=xaPNR-_Cfn0"><img src="hot_to_go.png" alt="hot to go"></a>
+            <a href="https://www.youtube.com/watch?v=1RKqOmSkGgM&list=OLAK5uy_lhiwv5leonPyvETQd0LQ6b_BuxoudBQDM"><img src="good_luck.png" alt="good luck babe"></a>
+        </div>
+        <div id="espacio"></div>
+    </div>
+        
+<!-- PRODUCTS -->
+    <div id="products">
+        <div id="prod_1" class="product">
+            <div class="p_img">
+                <img src="karma_keychain.png">
+            </div>  
+            <div class="description">
+                <h2>Karma Key Chain</h2>
+                <p>My kink is karma.</p>
+                <button class="p_button">Add to Cart</button>
+            </div> 
+        </div>
+        <div id="prod_2" class="product">
+            <div class="p_img">
+                <img src="pink_pony_hell.png">
+            </div>  
+            <div class="description">
+                <h2>Pink Pony Bumper Sticker</h2>
+                <p>There are only two choices.</p>
+                <button class="p_button">Add to Cart</button>
+            </div> 
+        </div>
+        <div id="prod_3" class="product">
+            <div class="p_img">
+                <img src="midwest_princess.png">
+            </div>  
+            <div class="description">
+                <h2>Midwest Princess Bumper Sticker</h2>
+                <p>You better honk right now.</p>
+                <button class="p_button">Add to Cart</button>
+            </div> 
+        </div>  
+    </div>
+    <div id="product_buttons">
+        <button id="karma" onclick="productToggleFirst()">Karma Key Chain</button>
+        <button id="pink_pony" onclick="productToggleSecond()">Pink Pony Bumper Sticker</button>
+        <button id="midwest_princess" onclick="productToggleThird()">Midwest Princess Bumper Sticker</button>
+    </div>
+    <div id="spacer"></div>
+<!-- GUESSING GAME -->
+    <div id="guessing_game">
+        <div id="halfsie_1"> 
+            <h2>Play to Win</h2>  
+            <p>Do you want to be the prettiest girl at the party? Win a tee shirt so that men and women alike know immediately that you're bisexual.</p>
+            <form>
+                <label for="guess">Enter a number between 1 and 10</label><br>
+                <input type="number" id="guess" name="guess"><br>
+                <button id="play_button" onclick="setTimeout(winShirt, 60000)">Play!</button>
+            </form>
+        </div>
+        <div id="halfsie_2">
+            <p id="h_p">Let's let karma decide...</p>
+            <p id="output"></p>
+        </div>
+    </div>
+<!-- CONTACT FORM -->
+    <div id="contact_area">
+        <div id="contact_form">
+            <h2>Connect with Chappell!</h2>
+            <form id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <span id="firstNameError" class="error"></span><br><br>
+        
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+                <span id="lastNameError" class="error"></span><br><br>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+                <span id="phoneError" class="error"></span><br><br>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span><br><br>
+        
+                <label>Contact Method:</label><br>
+                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                <label for="contactPhone">Phone</label><br>
+                <input type="radio" id="contactEmail" name="contactMethod" value="email">
+                <label for="contactEmail">Email</label>
+                <span id="contactMethodError" class="error"></span><br><br>
+        
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <span id="commentsError" class="error"></span><br><br>
+        
+                <input type="submit" id="submit_button" value="Submit">
+            </form>
+        </div>
+            <div id="submissionMessage">
+                <h3>Thanks babe!</h3>
+                <div id="submittedInfo"></div>
+            </div>
+        <div>
+            <img src="kaleidoscope.png">
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<div id="footer">
+     <div id="social_icons">
+        <div class="icon">
+            <a href="https://music.apple.com/us/artist/chappell-roan/1264818718"><img src="Social Icons/Apple_Music_pink.png"></a>
+            <p>Apple Music</p>
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/chappellroan/"><img src="Social Icons/Instagram_pink.png"></a>
+            <p>Instagram</p>
+        </div>
+        <div class="icon">
+            <a href="https://open.spotify.com/artist/7GlBOeep6PqTfFi59PTUUN?si=-YM8gpx-TfKQICU912lfpA"><img src="Social Icons/Spotify_pink.png"></a>
+            <p>Spotify</p>
+        </div>
+     </div>
+     <div id="logo_duex">
+        <a href="#tagline"><img src="logo.png"></a>
+     </div>     
+</div>
+
+</body>
+</hmtl>
